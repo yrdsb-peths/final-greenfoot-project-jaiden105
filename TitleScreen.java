@@ -20,7 +20,7 @@ public class TitleScreen extends World
         super(1280, 720, 1); 
         addObject(titleLabel, getWidth()/2, (getHeight()/2)-300);
         addObject(titleLabel2, getWidth()/2, (getHeight()/2)-200);
-        //prepare();
+        prepare();
     }
     
     /**
@@ -33,4 +33,21 @@ public class TitleScreen extends World
             Greenfoot.setWorld(gameWorld);
         }
     }
+    
+    /**
+     * Prepare the world for the start of the game.
+     * Creates the inital objects and adds them to the world.
+     */
+    private void prepare() {
+        Platform ground = new Platform();
+        addObject(ground,getWidth()/2, 720);
+        
+        PlayerOne playerOne = new PlayerOne();
+        addObject(playerOne,387,307);
+        
+        PlayerTwo playerTwo = new PlayerTwo();
+        addObject(playerTwo,879,308);
+        playerTwo.setLocation(886,300);
+    }
+    
 }
