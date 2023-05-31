@@ -1,39 +1,11 @@
 #Greenfoot project file
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 class.Platform.image=platform.png
 class.PlayerOne.image=idle\ stance\ player1.png
 class.PlayerTwo.image=idle\ stance\ player2.png
-=======
-<<<<<<< Updated upstream
->>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
-<<<<<<< Updated upstream
-=======
->>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
->>>>>>> Stashed changes
 class.TitleScreen.image=toy\ story\ background.jpg
 dependency1.from=MyWorld
 dependency1.to=PlayerOne
 dependency1.type=UsesDependency
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-dependency2.from=TitleScreen
-dependency2.to=MyWorld
-dependency2.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=1056
-package.numDependencies=2
-package.numTargets=7
-=======
->>>>>>> Stashed changes
 dependency2.from=MyWorld
 dependency2.to=PlayerTwo
 dependency2.type=UsesDependency
@@ -43,31 +15,28 @@ dependency3.type=UsesDependency
 dependency4.from=TitleScreen
 dependency4.to=MyWorld
 dependency4.type=UsesDependency
-editor.fx.0.height=523
-editor.fx.0.width=974
-editor.fx.0.x=953
-editor.fx.0.y=0
-height=1048
-<<<<<<< HEAD
-package.numDependencies=4
-package.numTargets=8
-=======
-package.numDependencies=1
-package.numTargets=7
-=======
+dependency5.from=TitleScreen
+dependency5.to=Platform
+dependency5.type=UsesDependency
+dependency6.from=TitleScreen
+dependency6.to=PlayerOne
+dependency6.type=UsesDependency
+dependency7.from=TitleScreen
+dependency7.to=PlayerTwo
+dependency7.type=UsesDependency
+dependency8.from=PlayerTwo
+dependency8.to=Platform
+dependency8.type=UsesDependency
+dependency9.from=PlayerOne
+dependency9.to=Platform
+dependency9.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=991
-editor.fx.0.y=139
+editor.fx.0.x=272
+editor.fx.0.y=148
 height=1056
-package.numDependencies=0
-package.numTargets=6
->>>>>>> Stashed changes
->>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
-<<<<<<< Updated upstream
-=======
->>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
->>>>>>> Stashed changes
+package.numDependencies=9
+package.numTargets=8
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -82,52 +51,6 @@ readme.width=47
 readme.x=10
 readme.y=10
 simulation.speed=50
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-target1.height=70
-target1.name=PlayerOneBullet
-target1.showInterface=false
-target1.type=ClassTarget
-target1.width=120
-target1.x=0
-target1.y=0
-target2.height=70
-target2.name=Platform
-target2.showInterface=false
-target2.type=ClassTarget
-target2.width=120
-target2.x=0
-target2.y=0
-target3.height=70
-target3.name=PlayerTwo
-target3.showInterface=false
-target3.type=ClassTarget
-target3.width=120
-target3.x=0
-target3.y=0
-target4.height=70
-target4.name=Label
-target4.showInterface=false
-target4.type=ClassTarget
-target4.width=120
-target4.x=0
-target4.y=0
-target5.height=70
-target5.name=PlayerTwoBullet
-target5.showInterface=false
-target5.type=ClassTarget
-target5.width=120
-target5.x=0
-target5.y=0
-<<<<<<< HEAD
-target6.height=70
-target6.name=PlayerOne
-=======
-target6.height=50
-target6.name=MyWorld
-=======
->>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
 target1.height=50
 target1.name=PlayerOneBullet
 target1.showInterface=false
@@ -136,70 +59,48 @@ target1.width=110
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=PlayerTwo
+target2.name=Platform
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-target3.name=Label
+target3.name=PlayerTwo
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=PlayerTwoBullet
+target4.name=Label
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=110
+target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
-target5.name=PlayerOne
+target5.name=PlayerTwoBullet
 target5.showInterface=false
 target5.type=ClassTarget
-target5.width=80
+target5.width=110
 target5.x=0
 target5.y=0
 target6.height=50
-<<<<<<< HEAD
-target6.name=MyWorld
-=======
-target6.name=TitleScreen
->>>>>>> Stashed changes
->>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
-<<<<<<< Updated upstream
-=======
->>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
->>>>>>> Stashed changes
+target6.name=PlayerOne
 target6.showInterface=false
 target6.type=ClassTarget
-target6.width=120
+target6.width=80
 target6.x=0
 target6.y=0
-<<<<<<< HEAD
 target7.height=50
-<<<<<<< Updated upstream
-=======
-=======
-<<<<<<< HEAD
-target7.height=50
->>>>>>> Stashed changes
 target7.name=MyWorld
-=======
-<<<<<<< Updated upstream
-target7.height=70
->>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
-target7.name=TitleScreen
->>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
 target7.x=0
 target7.y=0
-target8.height=70
+target8.height=50
 target8.name=TitleScreen
 target8.showInterface=false
 target8.type=ClassTarget
