@@ -1,15 +1,39 @@
 #Greenfoot project file
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 class.Platform.image=platform.png
 class.PlayerOne.image=idle\ stance\ player1.png
 class.PlayerTwo.image=idle\ stance\ player2.png
 =======
 <<<<<<< Updated upstream
 >>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
+<<<<<<< Updated upstream
+=======
+>>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
+>>>>>>> Stashed changes
 class.TitleScreen.image=toy\ story\ background.jpg
 dependency1.from=MyWorld
 dependency1.to=PlayerOne
 dependency1.type=UsesDependency
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+dependency2.from=TitleScreen
+dependency2.to=MyWorld
+dependency2.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=1056
+package.numDependencies=2
+package.numTargets=7
+=======
+>>>>>>> Stashed changes
 dependency2.from=MyWorld
 dependency2.to=PlayerTwo
 dependency2.type=UsesDependency
@@ -40,6 +64,10 @@ package.numDependencies=0
 package.numTargets=6
 >>>>>>> Stashed changes
 >>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
+<<<<<<< Updated upstream
+=======
+>>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
+>>>>>>> Stashed changes
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -48,16 +76,14 @@ publish.shortDesc=
 publish.tags=
 publish.title=
 publish.url=
-<<<<<<< Updated upstream
-readme.height=60
-=======
 readme.height=58
->>>>>>> Stashed changes
 readme.name=@README
-readme.width=49
+readme.width=47
 readme.x=10
 readme.y=10
 simulation.speed=50
+<<<<<<< HEAD
+=======
 <<<<<<< Updated upstream
 target1.height=70
 target1.name=PlayerOneBullet
@@ -101,6 +127,7 @@ target6.name=PlayerOne
 target6.height=50
 target6.name=MyWorld
 =======
+>>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
 target1.height=50
 target1.name=PlayerOneBullet
 target1.showInterface=false
@@ -116,30 +143,37 @@ target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-target3.name=PlayerTwoBullet
+target3.name=Label
 target3.showInterface=false
 target3.type=ClassTarget
-target3.width=110
+target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=PlayerOne
+target4.name=PlayerTwoBullet
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=80
+target4.width=110
 target4.x=0
 target4.y=0
 target5.height=50
-target5.name=MyWorld
+target5.name=PlayerOne
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
+<<<<<<< HEAD
+target6.name=MyWorld
+=======
 target6.name=TitleScreen
 >>>>>>> Stashed changes
 >>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
+<<<<<<< Updated upstream
+=======
+>>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
+>>>>>>> Stashed changes
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
@@ -147,10 +181,17 @@ target6.x=0
 target6.y=0
 <<<<<<< HEAD
 target7.height=50
+<<<<<<< Updated upstream
+=======
+=======
+<<<<<<< HEAD
+target7.height=50
+>>>>>>> Stashed changes
 target7.name=MyWorld
 =======
 <<<<<<< Updated upstream
 target7.height=70
+>>>>>>> 376abcd6ea288f6b337a3a64a47c3e9c9b78c08e
 target7.name=TitleScreen
 >>>>>>> f5054931ca1b0aa4632ea0456e97acd41251c8e5
 target7.showInterface=false
@@ -168,12 +209,5 @@ target8.y=0
 version=3.0.0
 width=1936
 world.lastInstantiated=TitleScreen
-xPosition=0
-yPosition=0
-=======
-version=3.0.0
-width=1936
-world.lastInstantiated=MyWorld
 xPosition=-8
 yPosition=-8
->>>>>>> Stashed changes
