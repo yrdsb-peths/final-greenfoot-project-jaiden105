@@ -40,7 +40,13 @@ public class TitleScreen extends World
      */
     private void prepare() {
         Platform ground = new Platform();
-        addObject(ground,getWidth()/2, 720);
+        addObject(ground, getWidth()/2, 720);
+
+        Platform platform1 = new Platform(200, 25);
+        addObject(platform1,getWidth()/2, getHeight()/2);
+
+        Platform platform2 = new Platform(200, 25);
+        addObject(platform2, getWidth()/2, getHeight()/2);
 
         PlayerOne playerOne = new PlayerOne();
         addObject(playerOne,1014,413);
@@ -68,6 +74,9 @@ public class TitleScreen extends World
 
         label2.setLocation(468,405);
         label3.setLocation(895,409);
+        
+        platform1.setLocation(440, 380);
+        platform2.setLocation(860, 380);
     }
     
 }
