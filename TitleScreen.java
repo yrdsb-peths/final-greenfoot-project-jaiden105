@@ -72,8 +72,8 @@ public class TitleScreen extends World
         playerOne.setLocation(426,315);
         label2.setLocation(936,413);
 
-        label2.setLocation(468,405);
-        label3.setLocation(895,409);
+        label3.setLocation(468,405);
+        label2.setLocation(895,409);
         
         platform1.setLocation(440, 380);
         platform2.setLocation(860, 380);
