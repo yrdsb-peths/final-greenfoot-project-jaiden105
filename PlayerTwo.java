@@ -11,12 +11,23 @@ public class PlayerTwo extends Actor
     //Private variables uses for falling
     private int velocity;
     
+    //Timer for the animation and jumping
+    SimpleTimer animationTimer = new SimpleTimer();
+    SimpleTimer jumpTimer = new SimpleTimer();
     /**
      * Constructor for PlayerOne, sets velocity = 0,
      * PlayerOne is not moving
      */
     public PlayerTwo() {
         this(100,100);
+        //Sets timer jump
+        jumpTimer.mark();
+        
+        //Walking animation
+        
+        animationTimer.mark();
+        
+        
         velocity = 2;
     }
     /**
@@ -34,8 +45,9 @@ public class PlayerTwo extends Actor
     public void act() 
     {
         fall();
-        if(Greenfoot.isKeyDown("up") && isOnGround()) {
+        if(Greenfoot.isKeyDown("up") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
             jump();
+            jumpTimer.mark();
         }
         if(Greenfoot.isKeyDown("left")) {
             move(-3);

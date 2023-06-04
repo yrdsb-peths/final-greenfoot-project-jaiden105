@@ -29,7 +29,7 @@ public class TitleScreen extends World
     public void act() {
         //Starts game if user presses space
         if(Greenfoot.isKeyDown("space")) {
-            MyWorld gameWorld = new MyWorld();
+            Fight gameWorld = new Fight();
             Greenfoot.setWorld(gameWorld);
         }
     }
