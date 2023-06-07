@@ -11,13 +11,28 @@ public class PlayerTwo extends Actor
     //Private variables uses for falling
     private int velocity;
     
+    //Timer for the animation and jumping
+    SimpleTimer animationTimer = new SimpleTimer();
+    SimpleTimer jumpTimer = new SimpleTimer();
+    SimpleTimer fireTimer = new SimpleTimer();
     /**
      * Constructor for PlayerOne, sets velocity = 0,
      * PlayerOne is not moving
      */
     public PlayerTwo() {
         this(100,100);
-        velocity = 2;
+        //Sets timer jump
+        jumpTimer.mark();
+        
+        //Sets shooting timer
+        fireTimer.mark();
+        
+        //Walking animation
+        
+        animationTimer.mark();
+        
+        
+        velocity = 3;
     }
     /**
      * Constructor to set the PlayerOne's size
@@ -34,8 +49,9 @@ public class PlayerTwo extends Actor
     public void act() 
     {
         fall();
-        if(Greenfoot.isKeyDown("up") && isOnGround()) {
+        if(Greenfoot.isKeyDown("up") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
             jump();
+            jumpTimer.mark();
         }
         if(Greenfoot.isKeyDown("left")) {
             move(-3);
@@ -43,8 +59,20 @@ public class PlayerTwo extends Actor
         else if(Greenfoot.isKeyDown("right")) {
             move(3);
         }
+        if(Greenfoot.isKeyDown("enter") && fireTimer.millisElapsed() > 500) {
+            fire();
+            fireTimer.mark();
+        }
     }    
-
+    
+    /**
+     * Fires player's weapon
+     */
+    private void fire() {
+        PlayerTwoBullet bullet = new PlayerTwoBullet();
+        getWorld().addObject(bullet, getX(), getY());
+    }
+    
     /**
      * When the player is falling
      */
@@ -54,9 +82,10 @@ public class PlayerTwo extends Actor
             velocity = 0;
         }
         else {
-            velocity = 2;
+            velocity = 3;
         }
     }
+    
     /**
      * When player jumps
      */

@@ -16,7 +16,7 @@ public class TitleScreen extends World
      */
     public TitleScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
         super(1280, 720, 1); 
         addObject(titleLabel, getWidth()/2, (getHeight()/2)-300);
         addObject(titleLabel2, getWidth()/2, (getHeight()/2)-200);
@@ -29,7 +29,7 @@ public class TitleScreen extends World
     public void act() {
         //Starts game if user presses space
         if(Greenfoot.isKeyDown("space")) {
-            MyWorld gameWorld = new MyWorld();
+            Fight gameWorld = new Fight();
             Greenfoot.setWorld(gameWorld);
         }
     }
