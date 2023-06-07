@@ -13,13 +13,12 @@ public class Fight extends World
     Label playerOneScore;
     Label playerTwoScore;
     /**
-     * Constructor for objects of class MyWorld.
-     * 
+     * Constructor for objects of class MyWorld. 
      */
     public Fight()
     {    
         // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
-        super(1280, 720, 1, false);
+        super(1280, 720, 1);
         
         //Creates the ground
         Platform ground = new Platform();
@@ -44,10 +43,16 @@ public class Fight extends World
         playerTwoScore = new Label(0, 100);
         addObject(playerOneScore, getWidth()/2 - 50, 100);
         addObject(playerTwoScore, getWidth()/2 + 50, 100);
+        
+        
     }
-    
+    /**
+     * Increases score
+     */
     public void increasePlayerOneScore() {
         score1++;
         playerOneScore.setValue(score1);
     }
+    
+    
 }
