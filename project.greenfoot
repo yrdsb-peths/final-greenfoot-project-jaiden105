@@ -30,17 +30,29 @@ dependency15.type=UsesDependency
 dependency2.from=Fight
 dependency2.to=Platform
 dependency2.type=UsesDependency
+<<<<<<< HEAD
+dependency3.from=PlayerTwo
+dependency3.to=Platform
+dependency3.type=UsesDependency
+dependency4.from=PlayerOne
+dependency4.to=Platform
+=======
 dependency3.from=Fight
 dependency3.to=PlayerOne
 dependency3.type=UsesDependency
 dependency4.from=Fight
 dependency4.to=PlayerTwo
+>>>>>>> 97b559922f8d76ed9126788ae353ed462de3f3f4
 dependency4.type=UsesDependency
 dependency5.from=TitleScreen
 dependency5.to=Label
 dependency5.type=UsesDependency
 dependency6.from=TitleScreen
+<<<<<<< HEAD
+dependency6.to=MyWorld
+=======
 dependency6.to=Fight
+>>>>>>> 97b559922f8d76ed9126788ae353ed462de3f3f4
 dependency6.type=UsesDependency
 dependency7.from=TitleScreen
 dependency7.to=Platform
