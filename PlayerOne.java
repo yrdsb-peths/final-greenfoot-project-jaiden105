@@ -63,6 +63,9 @@ public class PlayerOne extends Actor
             fire();
             fireTimer.mark();
         }
+        
+        //Increases score for player two
+        gotHit();
     }    
     
     /**
@@ -104,5 +107,15 @@ public class PlayerOne extends Actor
         }
         
         return isTouchingPlatform;
+    }
+    /**
+     * When player one gets hit by a bullet
+     */
+    public void gotHit() {
+        if(isTouching(PlayerTwoBullet.class)) {
+            removeTouching(PlayerTwoBullet.class);
+            Fight world = (Fight) getWorld();
+            world.increasePlayerTwoScore();       
+        }
     }
 }

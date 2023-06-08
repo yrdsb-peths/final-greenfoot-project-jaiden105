@@ -47,12 +47,20 @@ public class Fight extends World
         
     }
     /**
-     * Increases score
+     * Increases score for player one
      */
     public void increasePlayerOneScore() {
         score1++;
         playerOneScore.setValue(score1);
     }
+    /**
+     * Increases score for player two
+     */
+    public void increasePlayerTwoScore() {
+        score2++;
+        playerTwoScore.setValue(score2);
+    }
+    
     
     
 }
