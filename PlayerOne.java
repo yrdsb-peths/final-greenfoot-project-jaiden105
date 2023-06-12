@@ -49,21 +49,23 @@ public class PlayerOne extends Actor
     public void act() 
     {
         fall();
-        if(Greenfoot.isKeyDown("w") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
-            jump();
-            jumpTimer.mark();
+        //Only allows movement in the fight world
+        if (this.getWorld().getClass() == Fight.class) {
+            if(Greenfoot.isKeyDown("w") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
+                jump();
+                jumpTimer.mark();
+            }
+            if(Greenfoot.isKeyDown("a")) {
+                move(-3);
+            }
+            else if(Greenfoot.isKeyDown("d")) {
+                move(3);
+            }
+            if(Greenfoot.isKeyDown("f") && fireTimer.millisElapsed() > 500) {
+                fire();
+                fireTimer.mark();
+            }
         }
-        if(Greenfoot.isKeyDown("a")) {
-            move(-3);
-        }
-        else if(Greenfoot.isKeyDown("d")) {
-            move(3);
-        }
-        if(Greenfoot.isKeyDown("f") && fireTimer.millisElapsed() > 500) {
-            fire();
-            fireTimer.mark();
-        }
-        
         //Increases score for player two
         gotHit();
     }    
@@ -115,7 +117,7 @@ public class PlayerOne extends Actor
         if(isTouching(PlayerTwoBullet.class)) {
             removeTouching(PlayerTwoBullet.class);
             Fight world = (Fight) getWorld();
-            world.increasePlayerTwoScore();       
+            world.increasePlayerTwoScore();
         }
     }
 }

@@ -10,6 +10,7 @@ public class TitleScreen extends World
 {
     Label titleLabel = new Label("Toy Story", 120);
     Label titleLabel2 = new Label("Battlegrounds", 110);
+
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -36,7 +37,7 @@ public class TitleScreen extends World
     
     /**
      * Prepare the world for the start of the game.
-     * Creates the inital objects and adds them to the world.
+     * Creates the inital actors and adds them to the world.
      */
     private void prepare() {
         Platform ground = new Platform();

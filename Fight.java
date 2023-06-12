@@ -12,6 +12,9 @@ public class Fight extends World
     public int score2 = 0;
     Label playerOneScore;
     Label playerTwoScore;
+    //Creates the players
+    PlayerOne p1 = new PlayerOne();
+    PlayerTwo p2 = new PlayerTwo();
     /**
      * Constructor for objects of class MyWorld. 
      */
@@ -32,9 +35,6 @@ public class Fight extends World
         addObject(plat1, 400, 500);
         addObject(plat2, 900, 500);
         
-        //Creates the players
-        PlayerOne p1 = new PlayerOne();
-        PlayerTwo p2 = new PlayerTwo();
         
         addObject(p1, 100, 600);
         addObject(p2, 1180, 600);
@@ -44,21 +44,44 @@ public class Fight extends World
         addObject(playerOneScore, getWidth()/2 - 50, 100);
         addObject(playerTwoScore, getWidth()/2 + 50, 100);
         
-        
+        if(score1 == 5) {
+            PlayerOneWin victory = new PlayerOneWin();
+            Greenfoot.setWorld(victory);
+        }
+        else if(score2 == 5) {
+            PlayerTwoWin victory = new PlayerTwoWin();
+            Greenfoot.setWorld(victory);
+        }
     }
     /**
      * Increases score for player one
      */
     public void increasePlayerOneScore() {
-        score1++;
-        playerOneScore.setValue(score1);
+        this.score1++;
+        playerOneScore.setValue(this.score1);
+        removeObjects(getObjects(PlayerOneBullet.class));
+        removeObjects(getObjects(PlayerTwoBullet.class));
+        p1.setLocation(100, 600);
+        p2.setLocation(1180, 600);
+        if(score1 == 5) {
+            PlayerOneWin victory = new PlayerOneWin();
+            Greenfoot.setWorld(victory);
+        }
     }
     /**
      * Increases score for player two
      */
     public void increasePlayerTwoScore() {
-        score2++;
-        playerTwoScore.setValue(score2);
+        this.score2++;
+        playerTwoScore.setValue(this.score2);
+        removeObjects(getObjects(PlayerOneBullet.class));
+        removeObjects(getObjects(PlayerTwoBullet.class));
+        p1.setLocation(100, 600);
+        p2.setLocation(1180, 600);
+        if(score2 == 5) {
+            PlayerTwoWin victory = new PlayerTwoWin();
+            Greenfoot.setWorld(victory);
+        }
     }
     
     

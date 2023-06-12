@@ -49,21 +49,23 @@ public class PlayerTwo extends Actor
     public void act() 
     {
         fall();
-        if(Greenfoot.isKeyDown("up") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
-            jump();
-            jumpTimer.mark();
+        //Only allows movement in the fight world
+        if (this.getWorld().getClass() == Fight.class) {
+            if(Greenfoot.isKeyDown("up") && isOnGround() && jumpTimer.millisElapsed() > 1000) {
+                jump();
+                jumpTimer.mark();
+            }
+            if(Greenfoot.isKeyDown("left")) {
+                move(-3);
+            }
+            else if(Greenfoot.isKeyDown("right")) {
+                move(3);
+            }
+            if(Greenfoot.isKeyDown("enter") && fireTimer.millisElapsed() > 500) {
+                fire();
+                fireTimer.mark();
+            }
         }
-        if(Greenfoot.isKeyDown("left")) {
-            move(-3);
-        }
-        else if(Greenfoot.isKeyDown("right")) {
-            move(3);
-        }
-        if(Greenfoot.isKeyDown("enter") && fireTimer.millisElapsed() > 500) {
-            fire();
-            fireTimer.mark();
-        }
-        
         //Increases score for player one
         gotHit();
     }    

@@ -10,7 +10,6 @@ public class PlayerOneBullet extends Actor
 {
     public PlayerOneBullet() {
         this(25,25);
-        
     }
     public PlayerOneBullet(int width, int height) {
         GreenfootImage image = getImage();
