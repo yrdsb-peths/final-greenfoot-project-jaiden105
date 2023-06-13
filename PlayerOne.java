@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PlayerOne extends Actor
 {
+    GreenfootImage[] walk = new GreenfootImage[6];
+    
     //Private variables uses for falling
     private int velocity;
     
@@ -28,6 +30,14 @@ public class PlayerOne extends Actor
         fireTimer.mark();
         
         //Walking animation
+        for(int i = 0; i < walk.length; i++) {
+            walk[i] = new GreenfootImage("images/player one running/walk" + i +".png");
+            walk[i].scale(100, 100);
+        }
+        
+        setImage(walk[0]);
+        
+        //Walking animation timer
         animationTimer.mark();
         
         
@@ -68,6 +78,9 @@ public class PlayerOne extends Actor
         }
         //Increases score for player two
         gotHit();
+        
+        //Animate the player
+        animatePlayer();
     }    
     
     /**
@@ -78,6 +91,21 @@ public class PlayerOne extends Actor
         getWorld().addObject(bullet, getX(), getY());
         
     }
+    /**
+     * Animate the player
+     */
+    int currentImage = 0;
+    public void animatePlayer() {
+        if(animationTimer.millisElapsed() < 300) {
+            return;
+        }
+        animationTimer.mark();
+        
+        setImage(walk[currentImage]);
+        currentImage = (currentImage + 1) % walk.length;
+        
+    }
+    
     
     /**
      * When the player is falling
