@@ -1,15 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Platform here.
+ * This actor class will create the platforms needed for the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaiden Ing 
+ * @version June 13, 2023
  */
 public class Platform extends Actor
 {
+    /**
+     * Default constructor of Platform
+     */
     public Platform() {
-        this(1280, 100);
+        this(1280, 100); //sets as default size
     }
     /**
      * Constructor to set the platforms size
@@ -18,13 +21,5 @@ public class Platform extends Actor
         GreenfootImage image = getImage();
         image.scale(width, height);
         setImage(image);
-    }
-    /**
-     * Act - do whatever the Platform wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        // Add your action code here.
     }
 }
