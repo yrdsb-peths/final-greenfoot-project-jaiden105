@@ -8,6 +8,7 @@ class.PlayerTwo.image=idle\ stance\ player2.png
 class.PlayerTwoBullet.image=ball.png
 class.PlayerTwoWin.image=toy\ story\ background.jpg
 class.TitleScreen.image=toy\ story\ background.jpg
+<<<<<<< HEAD
 dependency1.from=PlayerOneWin
 dependency1.to=Label
 dependency1.type=UsesDependency
@@ -34,6 +35,40 @@ dependency16.to=PlayerOneBullet
 dependency16.type=UsesDependency
 dependency17.from=Fight
 dependency17.to=PlayerTwoBullet
+=======
+dependency1.from=PlayerTwoWin
+dependency1.to=Label
+dependency1.type=UsesDependency
+dependency10.from=Fight
+dependency10.to=PlayerTwoWin
+dependency10.type=UsesDependency
+dependency11.from=Fight
+dependency11.to=PlayerOneBullet
+dependency11.type=UsesDependency
+<<<<<<< HEAD
+dependency12.from=Fight
+dependency12.to=PlayerTwoBullet
+=======
+dependency12.from=PlayerTwo
+<<<<<<< Updated upstream
+dependency12.to=Fight
+>>>>>>> d20acb6aa05b46bf1622ecfbe4f6867671eef2dc
+dependency12.type=UsesDependency
+dependency13.from=TitleScreen
+dependency13.to=Label
+dependency13.type=UsesDependency
+dependency14.from=TitleScreen
+dependency14.to=Fight
+dependency14.type=UsesDependency
+dependency15.from=TitleScreen
+dependency15.to=Platform
+dependency15.type=UsesDependency
+dependency16.from=TitleScreen
+dependency16.to=PlayerOne
+dependency16.type=UsesDependency
+dependency17.from=TitleScreen
+dependency17.to=PlayerTwo
+>>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 dependency17.type=UsesDependency
 dependency18.from=PlayerTwo
 dependency18.to=SimpleTimer
@@ -41,8 +76,31 @@ dependency18.type=UsesDependency
 dependency19.from=PlayerTwo
 dependency19.to=PlayerTwoBullet
 dependency19.type=UsesDependency
+<<<<<<< HEAD
 dependency2.from=PlayerOneWin
 dependency2.to=TitleScreen
+=======
+<<<<<<< HEAD
+dependency2.from=PlayerTwoWin
+dependency2.to=TitleScreen
+=======
+=======
+dependency12.to=Platform
+dependency12.type=UsesDependency
+dependency13.from=PlayerOne
+dependency13.to=SimpleTimer
+dependency13.type=UsesDependency
+dependency14.from=PlayerOne
+dependency14.to=PlayerOneBullet
+dependency14.type=UsesDependency
+dependency15.from=PlayerOne
+dependency15.to=Platform
+dependency15.type=UsesDependency
+>>>>>>> Stashed changes
+dependency2.from=Fight
+dependency2.to=PlayerOne
+>>>>>>> d20acb6aa05b46bf1622ecfbe4f6867671eef2dc
+>>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 dependency2.type=UsesDependency
 dependency20.from=PlayerTwo
 dependency20.to=Fight
@@ -68,6 +126,7 @@ dependency26.type=UsesDependency
 dependency27.from=PlayerOne
 dependency27.to=PlayerTwoBullet
 dependency27.type=UsesDependency
+<<<<<<< HEAD
 dependency3.from=TitleScreen
 dependency3.to=Label
 dependency3.type=UsesDependency
@@ -88,14 +147,62 @@ dependency8.to=Label
 dependency8.type=UsesDependency
 dependency9.from=PlayerTwoWin
 dependency9.to=TitleScreen
+=======
+dependency3.from=PlayerOneWin
+dependency3.to=Label
+dependency3.type=UsesDependency
+<<<<<<< HEAD
+dependency4.from=PlayerOneWin
+dependency4.to=TitleScreen
+=======
+dependency4.from=Fight
+<<<<<<< Updated upstream
+dependency4.to=Platform
+=======
+dependency4.to=PlayerTwo
+>>>>>>> Stashed changes
+>>>>>>> d20acb6aa05b46bf1622ecfbe4f6867671eef2dc
+dependency4.type=UsesDependency
+dependency5.from=Fight
+dependency5.to=Label
+dependency5.type=UsesDependency
+dependency6.from=Fight
+dependency6.to=PlayerOne
+dependency6.type=UsesDependency
+dependency7.from=Fight
+dependency7.to=PlayerTwo
+dependency7.type=UsesDependency
+dependency8.from=Fight
+dependency8.to=Platform
+dependency8.type=UsesDependency
+dependency9.from=Fight
+dependency9.to=PlayerOneWin
+>>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 dependency9.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=552
 editor.fx.0.y=100
 height=1048
 package.numDependencies=27
 package.numTargets=13
+=======
+editor.fx.0.x=1099
+editor.fx.0.y=181
+height=1048
+package.numDependencies=27
+package.numTargets=12
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=1048
+package.numDependencies=15
+package.numTargets=11
+>>>>>>> Stashed changes
+>>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
