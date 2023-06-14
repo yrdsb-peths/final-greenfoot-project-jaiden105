@@ -8,7 +8,6 @@ class.PlayerTwo.image=idle\ stance\ player2.png
 class.PlayerTwoBullet.image=ball.png
 class.PlayerTwoWin.image=toy\ story\ background.jpg
 class.TitleScreen.image=toy\ story\ background.jpg
-dependency15.to=PlayerTwoWin
 dependency1.from=PlayerTwoWin
 dependency1.to=Label
 dependency1.type=UsesDependency
