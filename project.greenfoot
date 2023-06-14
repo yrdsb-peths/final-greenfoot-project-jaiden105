@@ -8,34 +8,7 @@ class.PlayerTwo.image=idle\ stance\ player2.png
 class.PlayerTwoBullet.image=ball.png
 class.PlayerTwoWin.image=toy\ story\ background.jpg
 class.TitleScreen.image=toy\ story\ background.jpg
-<<<<<<< HEAD
-dependency1.from=PlayerOneWin
-dependency1.to=Label
-dependency1.type=UsesDependency
-dependency10.from=Fight
-dependency10.to=Label
-dependency10.type=UsesDependency
-dependency11.from=Fight
-dependency11.to=PlayerOne
-dependency11.type=UsesDependency
-dependency12.from=Fight
-dependency12.to=PlayerTwo
-dependency12.type=UsesDependency
-dependency13.from=Fight
-dependency13.to=Platform
-dependency13.type=UsesDependency
-dependency14.from=Fight
-dependency14.to=PlayerOneWin
-dependency14.type=UsesDependency
-dependency15.from=Fight
 dependency15.to=PlayerTwoWin
-dependency15.type=UsesDependency
-dependency16.from=Fight
-dependency16.to=PlayerOneBullet
-dependency16.type=UsesDependency
-dependency17.from=Fight
-dependency17.to=PlayerTwoBullet
-=======
 dependency1.from=PlayerTwoWin
 dependency1.to=Label
 dependency1.type=UsesDependency
@@ -62,7 +35,6 @@ dependency16.to=PlayerOne
 dependency16.type=UsesDependency
 dependency17.from=TitleScreen
 dependency17.to=PlayerTwo
->>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 dependency17.type=UsesDependency
 dependency18.from=PlayerTwo
 dependency18.to=SimpleTimer
@@ -70,36 +42,8 @@ dependency18.type=UsesDependency
 dependency19.from=PlayerTwo
 dependency19.to=PlayerTwoBullet
 dependency19.type=UsesDependency
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-dependency2.from=PlayerOneWin
-dependency2.to=TitleScreen
-=======
-<<<<<<< HEAD
 dependency2.from=PlayerTwoWin
 dependency2.to=TitleScreen
-=======
-=======
-dependency12.to=Platform
-dependency12.type=UsesDependency
-dependency13.from=PlayerOne
-dependency13.to=SimpleTimer
-dependency13.type=UsesDependency
-dependency14.from=PlayerOne
-dependency14.to=PlayerOneBullet
-dependency14.type=UsesDependency
-dependency15.from=PlayerOne
-dependency15.to=Platform
-dependency15.type=UsesDependency
->>>>>>> Stashed changes
-dependency2.from=Fight
-dependency2.to=PlayerOne
->>>>>>> d20acb6aa05b46bf1622ecfbe4f6867671eef2dc
->>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
-=======
-dependency2.from=PlayerTwoWin
-dependency2.to=TitleScreen
->>>>>>> Stashed changes
 dependency2.type=UsesDependency
 dependency20.from=PlayerTwo
 dependency20.to=Fight
@@ -125,28 +69,6 @@ dependency26.type=UsesDependency
 dependency27.from=PlayerOne
 dependency27.to=PlayerTwoBullet
 dependency27.type=UsesDependency
-<<<<<<< HEAD
-dependency3.from=TitleScreen
-dependency3.to=Label
-dependency3.type=UsesDependency
-dependency4.from=TitleScreen
-dependency4.to=Fight
-dependency4.type=UsesDependency
-dependency5.from=TitleScreen
-dependency5.to=Platform
-dependency5.type=UsesDependency
-dependency6.from=TitleScreen
-dependency6.to=PlayerOne
-dependency6.type=UsesDependency
-dependency7.from=TitleScreen
-dependency7.to=PlayerTwo
-dependency7.type=UsesDependency
-dependency8.from=PlayerTwoWin
-dependency8.to=Label
-dependency8.type=UsesDependency
-dependency9.from=PlayerTwoWin
-dependency9.to=TitleScreen
-=======
 dependency3.from=PlayerOneWin
 dependency3.to=Label
 dependency3.type=UsesDependency
@@ -167,42 +89,14 @@ dependency8.to=Platform
 dependency8.type=UsesDependency
 dependency9.from=Fight
 dependency9.to=PlayerOneWin
->>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
 dependency9.type=UsesDependency
-<<<<<<< Updated upstream
-editor.fx.0.height=739
-editor.fx.0.width=816
-<<<<<<< HEAD
-editor.fx.0.x=552
-editor.fx.0.y=100
-height=1048
-package.numDependencies=27
-package.numTargets=13
-=======
-editor.fx.0.x=1099
-editor.fx.0.y=181
-height=1048
-package.numDependencies=27
-package.numTargets=12
-=======
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=1048
-package.numDependencies=15
-package.numTargets=11
->>>>>>> Stashed changes
->>>>>>> 13bbaafdb7b71cd5d501b243944390e65cff37c5
-=======
 editor.fx.0.height=689
 editor.fx.0.width=816
-editor.fx.0.x=889
-editor.fx.0.y=208
+editor.fx.0.x=662
+editor.fx.0.y=192
 height=1048
 package.numDependencies=27
 package.numTargets=12
->>>>>>> Stashed changes
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -245,16 +139,6 @@ target12.type=ClassTarget
 target12.width=80
 target12.x=0
 target12.y=0
-<<<<<<< Updated upstream
-target13.height=50
-target13.name=MyWorld
-target13.showInterface=false
-target13.type=ClassTarget
-target13.width=80
-target13.x=0
-target13.y=0
-=======
->>>>>>> Stashed changes
 target2.height=70
 target2.name=PlayerOneWin
 target2.showInterface=false
@@ -269,16 +153,6 @@ target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
-<<<<<<< Updated upstream
-target4.height=50
-target4.name=SimpleTimer
-target4.showInterface=false
-target4.type=ClassTarget
-target4.width=90
-target4.x=0
-target4.y=0
-target5.height=50
-=======
 target4.height=70
 target4.name=SimpleTimer
 target4.showInterface=false
@@ -287,7 +161,6 @@ target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
->>>>>>> Stashed changes
 target5.name=SmoothMover
 target5.showInterface=false
 target5.type=AbstractTarget
@@ -315,19 +188,11 @@ target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
-<<<<<<< Updated upstream
-target9.height=50
-target9.name=PlayerTwoWin
-target9.showInterface=false
-target9.type=ClassTarget
-target9.width=100
-=======
 target9.height=70
 target9.name=PlayerTwoWin
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
->>>>>>> Stashed changes
 target9.x=0
 target9.y=0
 version=3.0.0
