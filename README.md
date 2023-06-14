@@ -6,4 +6,8 @@ are the arrow keys and "enter" to shoot. To start playing the game, you need to 
 through winning a round by landing a bullet on the other player. Once a player wins, you will prompted the victory screen for that player, and to play again you need
 to press spacebar to go back to the main menu screen.
 
-
+Credits to Sprites:
+https://www.deviantart.com/lostchild14000/art/Sprite-Sheet-Gun-Soldier-675509084 -> Sprite Sheet: Gun Soldier by lostchild14000
+https://www.doomworld.com/forum/topic/73426-share-your-sprites/?page=9 -> An edit of Shadow Doom Marine skin
+https://br.pinterest.com/pin/821907000714667056/ -> Background
+https://www.pngitem.com/middle/hJRmhRx_pixar-ball-png-luxo-jr-ball-png-transparent/ -> Bullet
