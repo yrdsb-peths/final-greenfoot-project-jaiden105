@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PlayerTwo here.
+ * Contains player twos's controls, animations and general functionality.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaiden Ing
+ * @version June 13, 2023
  */
 public class PlayerTwo extends Actor
 {
@@ -21,7 +21,7 @@ public class PlayerTwo extends Actor
      * PlayerOne is not moving
      */
     public PlayerTwo() {
-        this(100,100);
+        this(100,100); //sets size of PlayerOne to 100x100 pixels
         //Sets timer jump
         jumpTimer.mark();
         
@@ -124,6 +124,9 @@ public class PlayerTwo extends Actor
         velocity = -200;
     }
     
+    /**
+     * Checks if the player is standing on top of a platform
+     */
     public boolean isOnGround() {
         boolean isTouchingPlatform = false;
         int imageWidth = getImage().getWidth();

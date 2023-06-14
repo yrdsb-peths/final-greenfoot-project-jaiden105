@@ -1,17 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PlayerTwoBullet here.
+ * Contains player two's bullet size and functionality (movement).
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaiden Ing
+ * @version June 13, 2023
  */
 public class PlayerTwoBullet extends Actor
 {
+    /**
+     * Default constructor for PlayerTwoBullet
+     */
     public PlayerTwoBullet() {
-        this(25,25);
+        this(25,25); //sets default size to 25x25 pixels
         
     }
+    /**
+     * PlayerTwoBullet constructor for customizing size
+     */
     public PlayerTwoBullet(int width, int height) {
         GreenfootImage image = getImage();
         image.scale(width, height);
@@ -23,9 +29,9 @@ public class PlayerTwoBullet extends Actor
      */
     public void act() 
     {
-        move(-8);
+        move(-8); //speed bullet moves at backwards
         if(getX() <= 10) {
-            getWorld().removeObject(this);
+            getWorld().removeObject(this); //removes bullet if touching border
         }
     }    
 }
